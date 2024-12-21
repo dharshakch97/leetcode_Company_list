@@ -1,5 +1,6 @@
 import React from "react";
-import { companies } from "../data/companies";
+import { companyData } from "../data/companyData";
+import { Company } from "../types/Company";
 
 interface CompanyListProps {
     onCompanySelect: (companyId: string) => void
@@ -8,7 +9,7 @@ interface CompanyListProps {
 const CompanyList: React.FC<CompanyListProps> = ({ onCompanySelect }) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {companies.map((company) => (
+            {companyData.map((company: Company) => (
                 <button
                     key={company.id}
                     onClick={() => onCompanySelect(company.id)}

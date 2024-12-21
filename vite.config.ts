@@ -6,8 +6,9 @@ import tailwindcss from 'tailwindcss'
 export default defineConfig({
   css: {
     postcss: {
-      plugins: [tailwindcss('./tailwind.config.js')]
+      plugins: [tailwindcss('./tailwind.config.js')],
     }
   },
   plugins: [react()],
+  base: "https://github.com/dharshakch97/leetcode_Company_list"
 })
