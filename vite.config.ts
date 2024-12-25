@@ -10,5 +10,5 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: "https://github.com/dharshakch97/leetcode_Company_list"
+  base: "/leetcode_Company_list"
 })
